@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress JavaFxDefaultTag -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="567.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.111"
+      fx:controller="sample.Controller">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileNewClick" text="New"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileOpenClick" text="Open"/>
+
+                        <MenuItem mnemonicParsing="false" onAction="#onFileSaveClick" text="Save"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileSaveAsClick" text="Save as"/>
+
+                        <MenuItem mnemonicParsing="false" onAction="#onFileQuitClick" text="Exit"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Manage">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onCopyClick" text="Copy"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onPasteClick" text="Paste"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onCutClick" text="Cut"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onDeleteClick" text="Delete"/>
+
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Search">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onFindClick" text="Search"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onDateClick" text="Time and Date"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAboutClick" text="About"/>
+                    </items>
+                </Menu>
+
+            </menus>
+        </MenuBar>
+        <TextArea fx:id="textArea" minHeight="-Infinity" VBox.vgrow="ALWAYS"/>
+
+    </children>
+</VBox>
