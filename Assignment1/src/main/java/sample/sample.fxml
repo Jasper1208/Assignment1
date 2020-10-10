@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.fxmisc.richtext.*?>
+
+<AnchorPane fx:id="MainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.Controller">
+    <children>
+        <MenuBar fx:id="Menu" layoutY="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu fx:id="File" mnemonicParsing="false" onAction="#clickFile" text="File">
+                    <items>
+                        <MenuItem fx:id="New" mnemonicParsing="false" onAction="#clickNew" text="New" />
+                        <MenuItem fx:id="Open" mnemonicParsing="false" onAction="#clickOpen" text="Open" />
+                        <MenuItem fx:id="Save" mnemonicParsing="false" onAction="#clickSave" text="Save" />
+                        <MenuItem fx:id="Print" mnemonicParsing="false" onAction="#clickPrint" text="Print" />
+                        <MenuItem fx:id="Exit" mnemonicParsing="false" onAction="#clickExit" text="Exit" />
+                        <MenuItem fx:id="EsSave" mnemonicParsing="false" onAction="#clickEsSave" text="EsSave" />
+                    </items>
+                </Menu>
+                <Menu fx:id="Search" mnemonicParsing="false" onAction="#clickSearch" text="Search">
+                    <items>
+                        <MenuItem fx:id="search" mnemonicParsing="false" onAction="#clickSearch" text="search text" />
+                    </items>
+                </Menu>
+                <Menu fx:id="View" mnemonicParsing="false" onAction="#clickView" text="View" />
+                <Menu fx:id="Manage" mnemonicParsing="false" onAction="#clickManage" text="Manage" />
+                <Menu fx:id="Help" mnemonicParsing="false" onAction="#clickHelp" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clickAbout" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <CodeArea id="codeArea" fx:id="codeArea" layoutX="11.0" layoutY="24.0" prefHeight="355.0" prefWidth="572.0">
+            <contextMenu>
+                <ContextMenu fx:id="RightClick" onAction="#clickRight">
+                    <items>
+                        <MenuItem fx:id="Select" mnemonicParsing="false" onAction="#clickSelect" text="Select text" />
+                        <MenuItem fx:id="Copy" mnemonicParsing="false" onAction="#clickCopy" text="Copy" />
+                        <MenuItem fx:id="Paste" mnemonicParsing="false" onAction="#clickPaste" text="Paste" />
+                        <MenuItem fx:id="Cut" mnemonicParsing="false" onAction="#clickCut" text="Cut" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </CodeArea>
+
+    </children>
+
+</AnchorPane>
